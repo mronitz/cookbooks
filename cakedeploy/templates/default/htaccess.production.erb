@@ -4,3 +4,7 @@
     RewriteRule    (.*) webroot/$1    [L]
 </IfModule>
 SetEnv APPLICATION_ENV production
+
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>
