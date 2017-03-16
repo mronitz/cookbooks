@@ -1,0 +1,12 @@
+KeepAlive On
+KeepAliveTimeout 1
+MaxKeepAliveRequests 1000
+
+<IfModule mpm_prefork_module>
+    ServerLimit             2500
+    StartServers            1500
+    MinSpareServers          500
+    MaxSpareServers         1000
+    MaxRequestWorkers       2048
+    MaxConnectionsPerChild     0
+</IfModule>
