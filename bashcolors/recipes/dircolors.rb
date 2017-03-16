@@ -12,6 +12,7 @@ end
 
 execute 'git clone git://github.com/altercation/vim-colors-solarized.git /home/ubuntu/.vim/bundle/vim-colors-solarized' do
     action :run
+    not_if {Dir.exist?("/home/ubuntu/.vim/bundle/vim-colors-solarized") }
 end
 
 template "/home/ubuntu/.vimrc" do
