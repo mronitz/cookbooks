@@ -4,7 +4,3 @@ template "/home/ubuntu/.profile" do
     owner 'ubuntu'
     group 'ubuntu'
 end
-
-execute 'source /home/ubuntu/.profile' do
-    action :run
-end
