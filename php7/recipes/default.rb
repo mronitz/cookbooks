@@ -15,9 +15,9 @@ execute 'a2dismod php5' do
     action :run
 end
 
-#execute 'a2enmod php7.0' do
-#    action :run
-#end
+execute 'a2enmod php7.0' do
+    action :run
+end
 
 execute 'service apache2 restart' do
     action :run
